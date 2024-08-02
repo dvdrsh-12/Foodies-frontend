@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.carosel_img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-control-prev {
+    width: fit-content;
+    height: fit-content;
+    top: 45%;
+    left: 3%;
+}
+
+.carousel-control-next {
+    width: fit-content;
+    height: fit-content;
+    top: 45%;
+    right: 3%;
+}
+
+.carouselcaption {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+    left: 24px;
+}
+
+.carouselcaption form {
+    width: 50%;
+}
