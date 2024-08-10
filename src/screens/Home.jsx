@@ -7,7 +7,7 @@ export default function Home() {
   const [foodCat, setfoodCat] = useState([]);
   const [foodItem, setfoodItem] = useState([]);
   const loadData = async () => {
-    let response = await fetch("http://localhost:3000/api/foodData", {
+    let response = await fetch("https://foodies-backend-6kl3.onrender.com/api/foodData", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'

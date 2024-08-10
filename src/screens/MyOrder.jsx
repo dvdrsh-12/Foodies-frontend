@@ -8,7 +8,7 @@ export default function MyOrder() {
 
     const fetchMyOrder = async () => {
         try {
-            const response = await fetch("http://localhost:3000/api/myorderData", {
+            const response = await fetch("https://foodies-backend-6kl3.onrender.com/api/myorderData", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -6,7 +6,7 @@ export default function Login() {
   let navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:3000/api/loginUser', {
+    const response = await fetch('https://foodies-backend-6kl3.onrender.com/api/loginUser', {
       method: "POST",
       headers: {
         'Content-Type': "application/json"

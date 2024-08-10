@@ -6,7 +6,7 @@ export default function Signup() {
     const [credentials, setcredentials] = useState({ name: '', email: '', password: '', geolocation: '' });
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('http://localhost:3000/api/createUser', {
+        const response = await fetch('https://foodies-backend-6kl3.onrender.com/api/createUser', {
             method: "POST",
             headers: {
                 'Content-Type': "application/json"

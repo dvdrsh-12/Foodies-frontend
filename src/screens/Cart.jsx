@@ -22,7 +22,7 @@ export default function Cart() {
             email: email,
             order_date: new Date().toDateString()
         }
-        let response = await fetch("http://localhost:3000/api/orderData", {
+        let response = await fetch("https://foodies-backend-6kl3.onrender.com/api/orderData", {
 
             method: 'POST',
             headers: {
