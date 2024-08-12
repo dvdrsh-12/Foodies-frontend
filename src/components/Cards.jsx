@@ -50,14 +50,14 @@ export default function Cards(props) {
                     <div className="card-body">
                         <h5 className="card-title">{props.foodItem.name}</h5>
                         <div className="container w-100">
-                            <select className='m-2 h-100 bg-success rounded' onClick={handleClick} onChange={(e) => setQty(e.target.value)}>
+                            <select className='m-2 h-100 bg-tomato rounded' onClick={handleClick} onChange={(e) => setQty(e.target.value)}>
                                 {Array.from(Array(6), (e, i) => {
                                     return (
                                         <option key={i + 1} value={i + 1}>{i + 1}</option>
                                     )
                                 })}
                             </select>
-                            <select className='m-2 h-100 bg-success rounded' ref={priceRef} onClick={handleClick} onChange={(e) => setSize(e.target.value)}>
+                            <select className='m-2 h-100 bg-tomato rounded' ref={priceRef} onClick={handleClick} onChange={(e) => setSize(e.target.value)}>
                                 {priceOptions.map((data) => {
                                     return <option key={data} value={data}>{data}</option>
                                 })}

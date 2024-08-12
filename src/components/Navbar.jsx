@@ -4,6 +4,7 @@ import { Badge } from 'react-bootstrap';
 import Cart from '../screens/Cart';
 import Modal from '../Modal';
 import { useCart } from './ContextReducer';
+import '../index.css'
 export default function Navbar() {
     const [cartView, setCartView] = useState(false)
     let data = useCart();
@@ -14,7 +15,7 @@ export default function Navbar() {
     }
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-success">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-tomato">
                 <div className="container-fluid">
                     <Link className="navbar-brand fs-1 fst-italic" to="/">Foodies</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

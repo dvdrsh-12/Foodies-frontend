@@ -44,3 +44,7 @@ code {
 .carouselcaption form {
     width: 50%;
 }
+
+.bg-tomato {
+    background-color: #d94f3f;
+}
